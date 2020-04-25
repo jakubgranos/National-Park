@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+
+# No Compiled assets
+web/assets/css/style.css
+web/assets/js/bundle.js
+web/*.html
+
+# Dotenv
+.env
+.env.*
+!.env.example
+
+# No OS-specific garbage
+*~
+.DS_Store
+Thumbs.db
+thumbs.db
+
+# No PhpStorm user configuration
+
+# No backstop data files.
+dev/backstop_data/
+
+# No yarn files
+yarn-error.log

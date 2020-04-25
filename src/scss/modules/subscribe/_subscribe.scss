@@ -1,0 +1,49 @@
+.subscribe {
+  font-family: $font-open-sans; 
+  text-align: center;
+  position: relative;
+
+  &-leafs-top {
+    position: absolute;
+    right: -300px;
+    top: 500px;
+    transform: rotate(-20deg);
+  }
+
+  &-leafs-down {
+    position: absolute;
+    left: -370px;
+    bottom: 100px;
+    transform: rotate(-20deg);
+  }
+
+  &-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    @include media('<lg') {
+      flex-direction: column;
+    }
+
+    & h2 {
+      color: $color-black;
+      margin: 23px 50px 0 0;
+
+      @include media('<lg') {
+        text-align: center;
+        margin: 0 0px 20px 0;
+      }
+    }
+  }
+
+  & button {
+    width: 190px;
+    height: 57px;
+    border-image-slice: 20;
+
+    @include media('<lg') {
+      width: 170px;
+    }
+  }
+}

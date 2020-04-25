@@ -1,0 +1,42 @@
+.hero {
+  background: url('../images/bgd-hero.png')no-repeat center;
+  background-size: cover;
+  width: 100%;
+  font-family: $font-open-sans;
+
+  &-text {
+    display: flex;
+    min-height: 877px;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+
+    & h1 {
+      padding: 20px 0 0 0;
+      color: $color-pure-white;
+      font-size: 40px;
+      font-weight: 400;
+      line-height: 59px;
+    }
+
+    &-mountain {
+      width: 136px;
+      height: 42px;
+    }
+
+    &-button {
+      color: $color-pure-white;
+      width: 197px;
+      height: 57px;
+    }
+
+    &-arrow {
+      margin: 30px 0 0 0;
+      width: 52px;
+      height: 19px;
+      position: inherit;
+      bottom: 0;
+      left: 200px;
+    }
+  }
+}

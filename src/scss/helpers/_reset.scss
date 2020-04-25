@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+button {
+  &:focus,
+  &:active {
+		outline: none;
+		
+    & > * {
+      position: relative;
+    }
+  }
+}
+
+figure {
+  margin: 0;
+}
+
+input {
+  border-radius: 0;
+
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus,
+  &:-webkit-autofill:active {
+    transition: 'color 999999s ease-out, background-color 999999s ease-out';
+    transition-delay: 999999s;
+  }
+
+  &::-ms-clear {
+    display: none;
+  }
+}

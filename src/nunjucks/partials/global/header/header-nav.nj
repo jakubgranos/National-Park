@@ -1,0 +1,36 @@
+{% set navItems = [
+  {
+    href: '/index.html',
+    label: 'Homepage'
+  },
+  {
+    href: '#',
+    label: 'Explore'
+  },
+  {
+    href: '#',
+    label: 'Discover'
+  },
+  {
+    href: '#',
+    label: 'News'
+  },
+  {
+    href: '#',
+    label: 'Team'
+  }      
+] %}
+
+<nav class="navigation">
+  <ul>
+    {% for item in navItems %}
+  	  <li>
+    	  <a href="{{ item.href }}">{{ item.label }}</a>
+    	</li>
+    {% endfor %}
+  </ul>
+</nav>
+
+<button class="hamburger">
+  <span class="hamburger-box"></span>
+</button>

@@ -1,0 +1,71 @@
+.discover {
+  position: relative;
+  background: url('../images/bgd-discover-shape.png')no-repeat center;
+  background-size: cover;
+  min-height: 1000px;
+  font-family: $font-open-sans;
+    
+  &-leafs-top {
+    position: absolute;
+    right: -300px;
+    top: -170px;
+    transform: rotate(-12deg);
+    z-index: 0;
+  }
+
+  &-leafs-down {
+    position: absolute;
+    left: -320px;
+    bottom: -20px;
+    transform: rotate(-50deg);
+    z-index: 0;
+  }
+
+  &-wrapper {
+    max-width: 1720px;
+    margin: 0 auto;
+    padding: 0 15px 0 15px;
+  }
+
+  &-row {
+    display: flex;
+    flex-direction: row;
+    counter-reset: card;
+
+    @include media('<xl') {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &-title {
+    padding: 200px 0 50px 0px;
+
+    @include media('<xl') {
+      padding: 100px 0 10px 0px;
+    }
+
+    & h2 {
+      @include media('<xl') {
+        text-align: center;
+        color: black;
+      }
+    }
+  }
+
+  &-right-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;  
+    width: 200px;
+    
+    & h2 {
+      color: $color-black;
+      font-weight: 600;
+    }
+
+    & p {
+      opacity: 0.7;
+    }
+  }
+}

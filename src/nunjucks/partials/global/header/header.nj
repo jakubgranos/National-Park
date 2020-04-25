@@ -1,0 +1,13 @@
+<header class="page-header">
+  <img src="{{ imageSrc('project-leafs.png') }}" class="page-header-leafs" alt="leafs" />
+  
+  <a href="index.html" class="page-header-logo">
+    <img src="{{ imageSrc('project-logo.png') }}" alt="Park Narodowy Puszcza Zielonka">
+  </a>
+  
+  <div class="page-header-container">
+    <a href="#">Rest. Breathe.</a>
+    <a href="#">Live</a>    
+    {% include 'partials/global/header/header-nav.nj' %}
+  </div>
+</header>

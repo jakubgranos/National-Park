@@ -1,0 +1,62 @@
+.hamburger {
+  $hamburger: &;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  z-index: 12;
+  transition: 0.2s all;
+  
+  @include media('<xl') {
+    position: fixed;
+    top: 60px;
+    right: 12px;
+  }
+  
+  @include media('<md') {
+    top: 30px;
+  }
+  
+  &-active {
+    @include media('<xl') {
+      transform: translateX(-150px);
+      background: #b5b5b5;
+    }
+  }
+
+  #{$hamburger}-box,
+  #{$hamburger}-box::after,
+  #{$hamburger}-box::before {
+    content: ' ';
+    display: block;
+    background: url('/assets/images/hamburger-patern.svg');
+    width: 47px;
+    height: 6px;
+    position: relative;
+    transition: 0.2s all;
+    
+  }
+
+  #{$hamburger}-box {
+    &-active {
+      background: transparent;
+    }
+    
+    &::before {
+      top: -15px;  
+    } 
+
+    &::after {
+      top: 10px;  
+    } 
+  }
+
+  #{$hamburger}-box-active {
+    &::before {
+      transform: translateY(12px) rotate(45deg);
+    }
+
+    &::after {
+      transform: translateY(-18px) rotate(-45deg);
+    }
+  }
+}

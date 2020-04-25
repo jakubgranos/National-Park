@@ -1,0 +1,26 @@
+{% set cardItem = [
+  { 
+    title: 'The Trail of Wooden Churches',
+    paragraph: 'Lorem ipsum dolor sit amet Lorem sit amet Lorem ipsum dolor sit dolort lorem omnis.'
+  },
+  { 
+    title: 'The Trail of Wooden Churches',
+    paragraph: 'Lorem ipsum dolor sit amet Lorem sit amet Lorem ipsum dolor sit dolort lorem omnis.'
+  },
+  { 
+    title: 'The Trail of Wooden Churches',
+    paragraph: 'Lorem ipsum dolor sit amet Lorem sit amet Lorem ipsum dolor sit dolort lorem omnis.'
+  }
+
+] %}
+
+{% for item in cardItem %}
+  <div class="discover-card">
+    <img src="{{ imageSrc('discover-icon-cape.svg') }}" class="discover-card-icon" alt="cape"/>
+    <div class="discover-card-text">
+      <h2>{{ item.title }}</h2>
+      <p>{{ item.paragraph }}</p>
+    </div>
+    <button class="discover-card-button button-white">READ MORE</button>
+  </div>
+{% endfor %}

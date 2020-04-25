@@ -1,0 +1,13 @@
+{% extends 'layouts/subscribe.nj' %}
+
+{% block title %}
+  <h2>Subscribe to never miss an event</h2>
+  <div class="subscribe-title-action">
+    <img src="{{ imageSrc('subscribe-title-arrow.svg') }}" alt="arrow"/>
+    <button class="button-black">Subscribe</button>
+  </div>
+{% endblock %}
+
+{% block card %}
+  {% include "partials/page/subscribe/subscribe-card.nj" %}
+{% endblock %}

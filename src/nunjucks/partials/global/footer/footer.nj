@@ -1,0 +1,33 @@
+{% set ColumnItem = [
+  {
+    hText:'Contact',
+    fristParagraph:'tel.: 0 123 456 789',
+    secondParagraph:'e-mail: contact@mail.com'
+  },
+  {
+    hText:'',
+    fristParagraph:'ul. Street 12,',
+    secondParagraph:'12-345 Gotham City'
+  },
+  {
+    hText:'Useful links',
+    fristParagraph:'forestsfoundation.com',
+    secondParagraph:'savethewolfs.com'
+  }    
+] %}
+
+
+<footer class="footer">
+  <div class="footer-wrapper">
+    <div class="footer-column">
+      <img src="{{ imageSrc('project-logo.png')}}" alt="logo" />
+      {% for item in ColumnItem %}
+        <div class="footer-column-info">
+          <h2>{{item.hText}}</h2>
+          <p>{{item.fristParagraph}}</p>
+          <p>{{item.secondParagraph}}</p>          
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</footer>

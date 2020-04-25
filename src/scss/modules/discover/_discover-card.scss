@@ -1,0 +1,54 @@
+.discover-card {
+  counter-increment: card;
+  background-image: linear-gradient(143deg, #628e71 0%, #7faa6b 50%, #a8d063 100%);
+  box-shadow: 6px 10px 20px rgba(0, 0, 0, 0.16);
+  min-height: 556px;
+  max-width: 400px;
+  margin: 0 45px 0 0;
+  padding: 150px 50px 50px 70px;
+  position: relative;
+
+  @include media('<xl') {
+    margin: 25px 0px 25px 0;
+  }
+  
+  &::before {
+    content: "0" counter(card);
+    position: absolute;
+    top: 0;
+    left: -35px;
+    font-weight: 700;
+    font-size: 150px;
+    color: $color-pure-white;
+    opacity: 0.2;
+  }
+  
+  &-icon {
+    position: absolute;
+    top: 0;
+    right: 50px;             
+  }
+
+  & h2 {
+    color: $color-pure-white;
+    
+    &::before {
+      content: "0" counter(card);
+      position: absolute;
+      left: 30px;
+    }
+  }
+
+  & p {
+    color: $color-pure-white;
+    opacity: 0.5;
+  }
+
+  &-button {
+    color: $color-pure-white;
+    position: absolute;
+    z-index: 10;
+    width: 197px;
+    height: 57px;
+  }
+}

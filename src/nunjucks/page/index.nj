@@ -1,0 +1,12 @@
+{% extends "layouts/page.nj" %}
+
+{% set title = 'National Park' %}
+
+{% block content %}
+  <div class="page-container">
+    {% include "partials/page/homepage/hero.nj" %}
+    {% include "partials/page/discover/discover.nj" %}
+    {% include "partials/page/subscribe/subscribe.nj" %}
+    {% include "partials/page/team/team.nj" %}               
+  </div>
+{% endblock %}

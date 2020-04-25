@@ -1,0 +1,28 @@
+{
+    "name": "gulp-nunjucks-starter",
+    "version": "1.0.0",
+    "main": "gulpfile.js",
+    "license": "MIT",
+    "scripts": {
+        "start": "gulp",
+        "build": "gulp build"
+    },
+    "dependencies": {
+        "@babel/core": "^7.5.5",
+        "@babel/preset-env": "^7.5.5",
+        "babel-loader": "^8.0.6",
+        "core-js": "3",
+        "gulp": "^4.0.2",
+        "gulp-autoprefixer": "^6.1.0",
+        "gulp-cached": "^1.1.1",
+        "gulp-nunjucks-render": "^2.2.3",
+        "gulp-sass": "^4.0.2",
+        "include-media": "^1.4.9",
+        "require-dir": "^1.2.0",
+        "webpack": "^4.38.0",
+        "webpack-stream": "^5.2.1"
+    },
+    "devDependencies": {
+        "browser-sync": "^2.26.7"
+    }
+}

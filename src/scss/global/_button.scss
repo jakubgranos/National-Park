@@ -1,0 +1,24 @@
+.button-orange,
+.button-white,
+.button-black {
+  margin: 40px 0 0 0;
+  font-size: 18px;
+  border: 20px solid $color-black;
+  padding: 0 15px 20px 15px;
+  cursor: pointer;
+}
+
+.button-orange {
+  border-image-source: url('../images/button-orange.svg');
+  border-image-slice: 20;
+}
+
+.button-black {
+  border-image-source: url('../images/button-black.svg');
+  border-image-slice: 15;
+}
+
+.button-white {
+  border-image-source: url('../images/button-white.svg');
+  border-image-slice: 15;
+}

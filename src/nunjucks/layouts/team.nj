@@ -1,0 +1,14 @@
+<section class="team">
+  <div class="team-title">
+    {% block title %} {% endblock %} 
+  </div>
+  <div class="team-wrapper">
+    <div class="team-row">
+      {% block card %} {% endblock %}
+    </div>
+    <div class="team-right-text">
+      <h3>Join us - together we can save the world!</h3>
+      <p>Lorem ipsum dolor sit amet Lorem sit amet Lorem ipsum dolor sit dolort lorem omnis.</p>
+    </div>
+  </div>
+</section>

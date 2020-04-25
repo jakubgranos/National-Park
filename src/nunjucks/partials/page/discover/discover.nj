@@ -1,0 +1,9 @@
+{% extends "layouts/discover.nj" %}
+
+{% block title %}
+  <h2>DISCOVER Hiking trails</h2>
+{% endblock %}
+
+{% block card %}
+  {% include "partials/page/discover/discover-card.nj" %}
+{% endblock %}

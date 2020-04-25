@@ -1,0 +1,12 @@
+<section class="hero">
+
+  <div class="container">
+    <div class="hero-text">
+      <img src="{{ imageSrc('hero-mountain.svg') }}" alt="mountain" class="hero-text-mountain"/>
+      <h1>There's no place on Earth <br> like Puszcza Zielonka</h1>
+      <button class="hero-text-button button-orange">Explore</button>
+      <img src="{{ imageSrc('hero-arrow.svg') }}" alt="arrow" class="hero-text-arrow"/>
+    </div>
+  </div>
+
+</section>

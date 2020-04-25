@@ -1,0 +1,9 @@
+{% extends 'layouts/team.nj' %}
+
+{% block title %}
+  <h2>Join our Team</h2>
+{% endblock %}
+
+{% block card %}
+  {% include "partials/page/team/team-card.nj" %}
+{% endblock %}

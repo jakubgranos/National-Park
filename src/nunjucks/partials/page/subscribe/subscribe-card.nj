@@ -1,0 +1,36 @@
+{% set cardItem = [
+  {
+    image: 'subscribe-card-1.jpg',
+    time: '1 month ago  3 min read',
+    title: 'NOC KOŚCIOŁÓW I MIĘDZYNARODOWY DZIEŃ MUZYKI 2019',
+    paragraph: 'Lorem ipsum dolor sit amet dolor tutti di mare, con trabe trabajo algier. Lorem ipsum dolor sit amet dolor tutti di mare, con trabe trabajo algier '
+  },
+  {
+    image: 'subscribe-card-1.jpg',
+    time: '1 month ago 3 min read',
+    title: 'NOC KOŚCIOŁÓW I MIĘDZYNARODOWY DZIEŃ MUZYKI 2019',
+    paragraph: 'Lorem ipsum dolor sit amet dolor tutti di mare, con trabe trabajo algier. Lorem ipsum dolor sit amet dolor tutti di mare, con trabe trabajo algier. Lorem ipsum dolor sit amet dolor'
+  },
+  {
+    image: 'subscribe-card-1.jpg',
+    time: '1 month ago 3 min read',
+    title: 'NOC KOŚCIOŁÓW I MIĘDZYNARODOWY DZIEŃ MUZYKI 2019',
+    paragraph: 'Lorem ipsum dolor sit amet dolor tutti di mare, con trabe trabajo algier. Lorem ipsum dolor sit amet dolor tutti di mare, con trabe trabajo algier. Lorem ipsum dolor sit amet dolor'
+  }  
+
+] %}
+
+{% for item in cardItem %}
+  <div class="subscribe-card">
+    <div class="subscribe-card-image">
+      <p>Read this</p>
+      <img src="{{ imageSrc(item.image) }}" alt="{{item.title}}" />
+    </div>
+    <div class="subscribe-card-information">
+      <p>{{ item.time }}</p>
+      <h3>{{ item.title }}</h3>
+      <p>{{ item.paragraph }}</p>
+      <p class="subscribe-card-information-button">Read more</p>
+    </div>
+  </div>
+{% endfor %}

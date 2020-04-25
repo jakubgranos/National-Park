@@ -1,0 +1,49 @@
+// Typography styles - headings, p, a, ul, ol, tables etc.
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+table {
+  margin: 0 0 15px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ol,
+ul {
+  list-style-type: none;
+}
+
+button {
+  margin: 0px;
+  padding: 0px;
+  background: transparent;
+  border: none;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33px;
+}
+
+h3 {
+  color: $color-mine-shaft;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 2rem;
+  text-transform: uppercase;
+
+  @include media('<lg') {
+    font-size: 25px;
+  }
+}

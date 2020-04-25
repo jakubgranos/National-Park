@@ -1,0 +1,103 @@
+.team {
+  background: url('../images/bgd-discover-shape.png') no-repeat center;
+  background-size: cover;
+  min-height: 1100px;
+  font-family: $font-open-sans;
+  
+  &-wrapper {
+    max-width: 1720px;
+    margin: 0 auto;
+    padding: 0 15px 0 15px;
+    display: flex;
+
+    @include media('<lg') {
+      flex-direction: column;
+      justify-items: center;
+    }
+  }
+
+  &-title {
+    padding: 200px 0 50px 15px;
+    max-width: 1720px;
+    margin: 0 auto;
+  }
+
+  &-row {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1300px;
+
+    &-card {
+      position: relative;
+      padding: 0 36px 36px 0;
+
+      @include media('<lg') {
+        padding: 0 0px 36px 0;
+        margin:  0 auto;
+      }
+    }
+  }
+
+  &-right-text {
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+    min-width: 200px;
+
+    @include media('<lg') {
+      width: 100%;
+      padding: 50px 0 0 0;
+      text-align: center;
+    }
+
+    & h3 {
+      color: $color-black;
+      font-weight: bold;
+      font-size: 22px;
+    }
+  }
+
+  &-join {
+    width: 281px;
+    height: 281px;
+    position: relative;
+    padding: 50px;
+    text-align: center;
+    background-image: linear-gradient(143deg, #628e71 0%, #7faa6b 50%, #a8d063 100%);
+    box-shadow: 6px 10px 20px rgba(0, 0, 0, 0.16);
+
+    @include media('<lg') {
+      margin:  0 auto;
+    }
+    
+    & h4 {
+      color: $color-pure-white;
+      line-height: 33px;
+    }
+    
+    &-button {
+      margin: 20px 0 0 0;
+      height: 57px;
+      color:$color-pure-white;
+    }
+  }
+
+  &-icon {
+    &-cape {
+      position: absolute;
+      right: 50px;
+      width: 40px;
+      top: -1px;
+
+      @include media('<lg') {
+        right: 20px;
+      }
+    }
+
+    &-arrow {
+      position: absolute;
+      right: -30px;
+      bottom: 10px;
+    }
+  }
+}

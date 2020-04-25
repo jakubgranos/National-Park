@@ -1,0 +1,13 @@
+<section class="subscribe">
+  <img src="{{ imageSrc('project-leafs.png') }}" class="subscribe-leafs-top" alt="leafs" />
+  <div class="container">
+    <div class="subscribe-title">
+      {% block title %} {% endblock %}
+    </div>
+    <div class="subscribe-row">
+      {% block card %} {% endblock %}
+      <button class="button-black">More News</button>
+    </div>
+  </div>
+  <img src="{{ imageSrc('project-leafs.png') }}" class="subscribe-leafs-down" alt="leafs" />
+</section>

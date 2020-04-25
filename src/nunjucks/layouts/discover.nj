@@ -1,0 +1,13 @@
+<section class="discover">
+  <img src="{{ imageSrc('project-leafs.png') }}" class="discover-leafs-top" alt="leafs" />
+  <div class="discover-wrapper">
+    <div class="discover-title">
+      {% block title %} {% endblock %}
+    </div>
+
+    <div class="discover-row">
+      {% block card %} {% endblock %}
+    </div>
+  </div>
+  <img src="{{ imageSrc('project-leafs.png') }}" class="discover-leafs-down" alt="leafs" />
+</section>

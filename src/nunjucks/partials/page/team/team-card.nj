@@ -1,0 +1,21 @@
+{% set cardItem = [
+  {image: 'team-card-1.png', alt:"person 1"},
+  {image: 'team-card-2.png', alt:"person 2"},
+  {image: 'team-card-3.png', alt:"person 3"},
+  {image: 'team-card-4.png', alt:"person 4"},
+  {image: 'team-card-5.png', alt:"person 5"}     
+] %}
+
+{% for item in cardItem %}
+  <div class="team-row-card">
+    <img src="{{imageSrc('discover-icon-cape.svg')}}" class="team-icon-cape" alt="cape"/>  
+    <img src="{{imageSrc(item.image)}}" alt="{{item.alt}}"/>  
+  </div>
+{% endfor %}
+
+<div class="team-join">
+  <img src="{{imageSrc('discover-icon-cape.svg')}}" class="team-icon-cape" alt="cape"/>  
+  <h4>This is The place for your face</h4>
+  <button class="team-join-button button-white">Join us</button>
+  <img src="{{imageSrc('team-arrow.svg')}}" class="team-icon-arrow" alt="arrow"/>    
+</div>
